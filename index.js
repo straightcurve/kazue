@@ -87,10 +87,6 @@ async function bootstrap() {
   const client = new Discord.Client({
     intents: ["Guilds", "GuildVoiceStates", "GuildMessages", "MessageContent"],
   });
-  const config = {
-    prefix: "$",
-    token: DISCORD_BOT_TOKEN,
-  };
 
   const { DisTube } = require("distube");
   const { SoundCloudPlugin } = require("@distube/soundcloud");
@@ -205,7 +201,7 @@ async function bootstrap() {
     .on("searchNoResult", (message) => message.channel.send("No result found!"))
     .on("searchDone", () => {});
 
-  client.login(config.token);
+  client.login(DISCORD_BOT_TOKEN);
 }
 
 bootstrap();
