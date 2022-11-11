@@ -1,0 +1,24 @@
+{
+  "name": "kazue",
+  "version": "1.0.0",
+  "description": "discord music bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "A2",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@distube/soundcloud": "^1.2.2",
+    "@distube/spotify": "^1.4.2",
+    "discord.js": "^14.6.0",
+    "distube": "^4.0.4",
+    "dotenv": "^16.0.3",
+    "sodium-native": "^3.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}
